@@ -18,7 +18,7 @@ public class DBsingleton {
         Connection c=null;
         Class.forName("org.postgresql.Driver");
         c = DriverManager
-           .getConnection("jdbc:postgresql://localhost:5433/postgres",
+           .getConnection("jdbc:postgresql://localhost:5432/postgres",
            "postgres", "postgres");
         System.out.println("Opened database successfully");
         return c;  
